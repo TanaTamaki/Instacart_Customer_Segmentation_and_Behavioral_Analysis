@@ -2,7 +2,7 @@
 *A rule-based segmentation and behavioral analysis project using Instacart grocery sales data.*
 
 ## Business Problem 
-Customer purchasing behavior varies widely, making a one-size-fits-all approach to marketing and merchandising less effective. **So how can Instacart target the right customers with the right products at the right time?**
+Customer purchasing behavior widely varies, making a one-size-fits-all approach to marketing and merchandising less effective. **So how can Instacart target the right customers with the right products at the right time?**
 
 This project answers that question by identifying:
 - **The Right Segments (Who):** Five distinct behavioral segments built using rule‑based logic grounded in spend, order frequency, number of orders, and basket patterns.
@@ -11,13 +11,13 @@ This project answers that question by identifying:
 
 
 ## Executive Summary
-This project builds a clear picture of how of Instacart customers shop by combining time‑based shopping patterns, spend behavior, and product‑level lift insights to develop a rule‑based customer segmentation framework. After identifying distinct behavioral profiles, the analysis translates these findings into strategic recommendations designed to help marketing and product teams improve product relevance, optimize promotional timing, encourage repeat purchasing, and deliver more personalized shopping experiences. 
+This analysis builds a clear picture of how Instacart customers shop by combining time‑based shopping patterns, spend behavior, and product‑level lift insights to develop a rule‑based customer segmentation framework. This approach translates raw transactional data into practical business strategies designed to help marketing and product teams improve product relevance, optimize promotional timing, encourage repeat purchasing, and deliver more personalized shopping experiences. 
 
 | Behavioral Segment      | Strategic Opportunity                   |
 | ----------------------- | ---------------------------------- |
 | **Light Shoppers**      | **Encourage** repeat purchasing to build consistent shopping habits.             |
 | **Core Shoppers**       | **Strengthen** existing routines.       |
-| **High Spenders**       | **Convert** high-value behavior into long-term engagement.      |
+| **High Spenders**       | **Convert** above average behavior into higher activity levels.      |
 | **Stock-Up Shoppers** | **Reduce** friction through automation and predictive replenishment. |
 | **Consistent Shoppers**         | **Recognize** and **protect** long-term value.          |
 
@@ -39,8 +39,7 @@ All datasets were cleaned, merged, and prepared for analysis in Notebook 1 and N
 
 
 ### Engineered Features
-To support rule‑based segmentation, several behavioral and demographic features were derived:
-
+To build interpretable segment rules, several customer-level behavioral and demographic feature were derived:
 - **Spend Behavior:** total spend, average spend per customer, and spend tier
 - **Order Frequency:** average days between orders and order frequency tier
 - **Engagement:** observed order count and engagement tier
@@ -49,10 +48,10 @@ To support rule‑based segmentation, several behavioral and demographic feature
 
 ## Tools 
 **Used Python as the primary programming language:**
-- **pandas:** data cleaning, merging, feature engineering, and aggregation
-- **NumPy:** numerical operations 
-- **Seaborn & Matplotlib:** visualizations
-- **Jupyter Notebook:** analysis, visualizations, and supporting documentation
+- **pandas:** Data cleaning, merging, feature engineering, and aggregation
+- **NumPy:** Numerical operations 
+- **Seaborn & Matplotlib:** Exploratory visualizations
+- **Jupyter Notebook:** Analysis, visualizations, and supporting documentation
   
 ## Methodology
 *Rather than using unsupervised clustering, customer segments were defined using **interpretable behavioral thresholds** designed for business usability. This approach ensures transparency and directly ties each segment to observed customer behaviors.*
@@ -64,7 +63,6 @@ To support rule‑based segmentation, several behavioral and demographic feature
 - Performed **product‑level lift** analysis to identify time‑specific product preferences. 
 - Built **rule‑based customer segmentation** using interpretable behavioral thresholds.
 - Translated segment insights into strategic recommendations to support marketing and product decisions.
-
 
 ## Results
 ### Behavioral Insights 
@@ -88,7 +86,7 @@ These distinct temporal patterns highlight opportunities for more contextually t
  
 
 ### Customer Segmentation Results
-Rule‑based segmentation identifies **five distinct customer groups** based on differences in engagement, spend, basket size, and order frequency patterns.
+Rule‑based segmentation identifies **five distinct customer groups** based on differences in number of orders, spend, basket size, and order frequency patterns.
 
 - INSERT VISUAL CHART SIDE-BY-SIDE -
 [segment distribution + estimated spend share visual]
@@ -146,6 +144,7 @@ Future work could build on this framework by validating segment stability, devel
 - Integrate segment labels into personalization systems, recommendation engines, and marketing workflows.
 - Incorporate product affinity, geography, seasonality, and promotion responsiveness into customer segments to further refine targeting strategies.
 - Continuously monitor and update the segmentation framework as new behavioral data becomes available to maintain relevance and accuracy. 
+
 
 
 
